@@ -8,11 +8,18 @@ export default function SiteLayout({
   children: React.ReactNode;
 }) {
   return (
-    <>
-      <Navbar />
-      {/* Page content */}
-      <main className="mx-auto max-w-6xl px-4 py-8">{children}</main>
-      <Footer />
-    </>
+    <div className="min-h-dvh grid grid-rows-[auto,1fr,auto]">
+      <header className="row-start-1">
+        <Navbar />
+      </header>
+
+      <main className="row-start-2 mx-auto max-w-6xl px-4 py-8">
+        {children}
+      </main>
+
+      <footer className="row-start-3">
+        <Footer />
+      </footer>
+    </div>
   );
 }

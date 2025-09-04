@@ -1,4 +1,4 @@
-@import "tailwindcss";
+/* @import "tailwindcss";
 
 :root {
   --background: #ffffff;
@@ -23,4 +23,56 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+} */
+
+@import 'tailwindcss';
+
+/* === P&Z Electric theme tokens === */
+@theme {
+  /* Brand Orange */
+  --color-brand-50: #fef2e6;
+  --color-brand-100: #fee5cd;
+  --color-brand-200: #fdcc9a;
+  --color-brand-300: #fcb268;
+  --color-brand-400: #fb9935;
+  --color-brand-500: #fa7f03; /* primary */
+  --color-brand-600: #c86602;
+  --color-brand-700: #964c02;
+  --color-brand-800: #643301;
+  --color-brand-900: #3e2001;
+
+  /* Bolt Yellow (accent) */
+  --color-accent-50: #fef7e8;
+  --color-accent-100: #fcefd2;
+  --color-accent-200: #f9e0a5;
+  --color-accent-300: #f6d078;
+  --color-accent-400: #f3c14b;
+  --color-accent-500: #f0b11e; /* primary accent */
+  --color-accent-600: #c08e18;
+  --color-accent-700: #906a12;
+  --color-accent-800: #60470c;
+  --color-accent-900: #3c2c08;
+
+  /* Graphite (UI grays) */
+  --color-graphite-50: #edeeee;
+  --color-graphite-100: #dbdcdd;
+  --color-graphite-200: #b7b9bb;
+  --color-graphite-300: #929699;
+  --color-graphite-400: #6e7377;
+  --color-graphite-500: #4a5055; /* primary gray */
+  --color-graphite-600: #3b4044;
+  --color-graphite-700: #2c3033;
+  --color-graphite-800: #1e2022;
+  --color-graphite-900: #121415;
+
+  /* Convenience aliases */
+  --color-ink: #000000; /* text on light */
+  --color-paper: #ffffff; /* text on dark */
+}
+
+/* Optional: dark surface/background helpers */
+:root {
+  color-scheme: dark;
+  --surface: #0b0b0b;
+  --panel: #121415;
 }
