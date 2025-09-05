@@ -11,7 +11,7 @@ export default function AboutPage() {
   return (
     <section className="space-y-6">
       <h1 className="text-4xl font-bold">About P&Z Electric</h1>
-      <p className="text-white/80 max-w-3xl">
+      <div className="text-white/80 max-w-3xl">
         <Section>
           P&Z Electric is a NYC-based, licensed and insured electrical
           contractor. We focus on clean workmanship, safety, and clear
@@ -55,7 +55,7 @@ export default function AboutPage() {
           any better, just ask. We appreciate your interest and look forward to
           earning your business.
         </Section>
-      </p>
+      </div>
 
       <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         <li className="rounded-xl border border-graphite-700 bg-graphite-800 p-4">
