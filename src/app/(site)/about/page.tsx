@@ -12,7 +12,7 @@ export default function AboutPage() {
   return (
     <section className="space-y-6">
       <h1 className="text-4xl font-bold">About P&Z Electric</h1>
-      <div className="flex flex-col gap-6 lg:flex-row lg:items-start lg:gap-12">
+      <div className="flex flex-col gap-6 lg:flex-row lg:items-start lg:gap-12 border border-graphite-700 p-6 rounded-2xl bg-brand-800/10">
         <div className="text-white/80 max-w-3xl">
           <Section>
             P&Z Electric is a NYC-based, licensed and insured electrical
