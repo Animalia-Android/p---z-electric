@@ -1,5 +1,3 @@
-// src/app/(site)/services/layout.tsx
-// import Link from 'next/link';
 import { sanity } from '@/lib/sanity/client';
 import ServicesNav from './ServicesNav';
 

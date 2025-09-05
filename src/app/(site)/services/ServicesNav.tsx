@@ -1,4 +1,3 @@
-// src/app/(site)/services/ServicesNav.tsx
 'use client';
 
 import Link from 'next/link';
@@ -13,6 +12,7 @@ function cx(...classes: Array<string | false | undefined>) {
 export default function ServicesNav({ items }: { items: Item[] }) {
   const pathname = usePathname();
 
+  items = ['Panel', 'Outlets', 'Wiring', 'Lighting', 'Generators', 'Other'];
   return (
     <nav className="rounded-xl border border-white/10 bg-white/5 p-2">
       <ul className="space-y-1">

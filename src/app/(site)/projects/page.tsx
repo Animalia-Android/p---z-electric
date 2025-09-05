@@ -1,7 +1,3 @@
-// import { sanity } from '@/lib/sanity.client';
-// import { allProjects } from '@/lib/queries';
-// import ProjectCard from '@/components/ProjectCard';
-
 import ProjectCard from '@/components/ProjectsCard';
 import { sanity } from '@/lib/sanity/client';
 import { allProjects } from '@/lib/sanity/queries';

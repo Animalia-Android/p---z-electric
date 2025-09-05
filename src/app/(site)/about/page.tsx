@@ -1,4 +1,3 @@
-// src/app/(site)/about/page.tsx
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -12,11 +11,12 @@ export default function AboutPage() {
     <section className="space-y-6">
       <h1 className="text-4xl font-bold">About P&Z Electric</h1>
       <p className="text-white/80 max-w-3xl">
-        {/* P&Z Electric is a NYC-based, licensed and insured electrical contractor.
+        P&Z Electric is a NYC-based, licensed and insured electrical contractor.
         We focus on clean workmanship, safety, and clear communication—from
         estimate to final inspection. Our team handles panel and service
         upgrades, lighting, EV chargers, low-voltage, and commercial build-outs
-        across all five boroughs. */}
+        across all five boroughs.
+        <br />
         P & Z Electric Corp is a full service electrical contracting company
         serving residential and commercial customers in the New York City area.
         We provide Panel Upgrades Services, Lighting Services and other services
@@ -37,11 +37,11 @@ export default function AboutPage() {
         P & Z Electric Corp has served its customers in the New York City area
         with a commitment to service and value. We have the experience and
         expertise to get the job done right the first time. Our skilled
-        professionals use only the finest tools and materials. Once we've made
-        the necessary repairs, it's almost as though the damage never occurred.
-        We provide personalized service and affordable rates.
+        professionals use only the finest tools and materials. Once we&apos;ve
+        made the necessary repairs, it&apos;s almost as though the damage never
+        occurred. We provide personalized service and affordable rates.
         <br />
-        And if there's anything else we can do to make your experience any
+        And if there&apos;s anything else we can do to make your experience any
         better, just ask. We appreciate your interest and look forward to
         earning your business.
       </p>
