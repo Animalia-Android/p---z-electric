@@ -1,3 +1,4 @@
+import BackButton from '@/components/BackButton';
 import Link from 'next/link';
 import { JSX } from 'react';
 
@@ -62,6 +63,7 @@ function slugify(s: string) {
 export default function ServicesPage() {
   return (
     <section className="space-y-8">
+      <BackButton destination="/" />
       <header className="space-y-2">
         <h1 className="text-3xl font-bold">Services Showcase</h1>
         <p className="text-white/80 max-w-2xl">

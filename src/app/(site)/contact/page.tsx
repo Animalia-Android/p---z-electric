@@ -16,8 +16,9 @@ export default async function ContactPage({
   const success = sp.success === '1';
 
   return (
-    <>
+    <main className="mx-auto max-w-5xl p-6 space-y-8">
       <BackButton destination="/" />
+
       <section className="space-y-8">
         <header className="space-y-2">
           <h1 className="text-3xl font-bold">Request an Estimate</h1>
@@ -185,6 +186,6 @@ export default async function ContactPage({
           </p>
         </form>
       </section>
-    </>
+    </main>
   );
 }
