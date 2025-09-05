@@ -7,12 +7,13 @@ export const metadata: Metadata = {
     'Get a fast, transparent electrical estimate in NYC—panel upgrades, lighting, EV chargers, troubleshooting, and more.',
 };
 
-export default function ContactPage({
+export default async function ContactPage({
   searchParams,
 }: {
-  searchParams?: { success?: string };
+  searchParams?: Promise<{ success?: string }>;
 }) {
-  const success = searchParams?.success === '1';
+  const sp = (await searchParams) ?? {};
+  const success = sp.success === '1';
 
   return (
     <>
