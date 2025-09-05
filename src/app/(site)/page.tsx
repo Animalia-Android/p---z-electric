@@ -1,4 +1,4 @@
-// app/(site)/page.tsx
+import Image from 'next/image';
 import Link from 'next/link';
 
 export default function HomePage() {
@@ -8,7 +8,7 @@ export default function HomePage() {
       <section className="relative isolate overflow-hidden rounded-2xl border border-white/10">
         {/* subtle gradient glow */}
         <div className="pointer-events-none absolute inset-0 -z-10 opacity-40 [mask-image:radial-gradient(60%_60%_at_50%_30%,white,transparent_70%)] bg-[radial-gradient(40rem_20rem_at_20%_-10%,rgba(250,204,21,0.25),transparent),radial-gradient(40rem_20rem_at_80%_120%,rgba(250,204,21,0.18),transparent)]" />
-        <div className="px-6 py-16 sm:px-10 md:px-14 md:py-24">
+        <div className="px-6 py-16 sm:px-10 md:px-14 md:py-12">
           <span className="inline-flex items-center gap-2 rounded-full border border-yellow-400/30 bg-yellow-400/10 px-3 py-1 text-sm font-medium text-yellow-300">
             {/* lightning icon */}
             <svg width="16" height="16" viewBox="0 0 24 24" className="-mb-0.5">
@@ -26,6 +26,17 @@ export default function HomePage() {
             Residential & commercial builds, service upgrades, lighting design,
             EV chargers, and rapid troubleshooting.
           </p>
+
+          <div className="relative mt-8 overflow-hidden rounded-2xl border border-white/10 aspect-[3/1]">
+            <Image
+              src="/manhattan-night-skyline.jpeg"
+              alt="Manhattan skyline at night"
+              fill
+              className="object-cover object-center"
+              sizes="100vw"
+              priority
+            />
+          </div>
 
           <div className="mt-8 flex flex-wrap gap-3">
             <Link

@@ -8,7 +8,12 @@ type Project = {
   clientType?: string;
   location?: string;
   year?: number;
-  hero?: any;
+  hero?: {
+    asset: {
+      _ref: string;
+      _type: string;
+    };
+  };
 };
 
 export default function ProjectCard({ p }: { p: Project }) {

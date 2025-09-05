@@ -131,7 +131,7 @@ export default function Navbar() {
               </ul>
               <div className="mt-2 border-t border-white/10 pt-2">
                 <Link
-                  href="/offerings"
+                  href="/services"
                   className="block px-3 py-1 text-xs text-yellow-300 hover:underline"
                 >
                   View all services →
